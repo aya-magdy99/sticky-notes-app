@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/sticky-notes.png" type="image/x-icon">
+    <title>Sticky Notes App</title>
+</head>
+
+<body class="position-relative d-flex flex-column justify-content-between">
+    <div class="open">
+
+        <div class="border border-light rounded-circle d-flex justify-content-center align-items-center">
+            <i class="fas fa-plus-circle"></i>
+        </div>
+    </div>
+
+    <div class="create bg-dark py-2 out" id="create">
+        <h2 class="text-white text-center mb-3 mt-2" id="h2">Add A New Note</h2>
+        <div class="d-flex h-75 flex-column justify-content-around align-items-center  my-4">
+
+
+            <div class="mx-2">
+
+                <input type="text" placeholder="Enter your note's title" class="form-control my-4" id="noteTitle">
+
+
+
+                <!-- <input type="text" class="form-control w-100" id="noteCon"> -->
+                <textarea name="" class="form-control my-4" placeholder="Enter your note's content" id="noteCon" cols="50" rows="10"></textarea>
+            </div>
+
+            <p class="count text-white">
+                1/350
+            </p>
+
+
+
+            <div class="colors   my-2">
+                <div class="col rounded-circle" data-color="rd">
+
+                </div>
+                <div class="col rounded-circle" data-color="orng">
+
+                </div>
+                <div class="col rounded-circle" data-color="ylw">
+
+                </div>
+                <div class="col active-col rounded-circle" data-color="grn">
+
+                </div>
+                <div class="col rounded-circle" data-color="blu">
+
+                </div>
+                <div class="col rounded-circle" data-color="pnk">
+
+                </div>
+
+
+            </div>
+            <button id="mainBtn" class="btn btn-light my-2 w-50 mx-auto rounded-pill">Add</button>
+            <div class="clos text-white">
+                <p><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+
+        <div class="row mt-2 py-3 px-2" id="row">
+
+
+
+        </div>
+
+    </div>
+
+    <footer class="bg-dark d-flex align-items-center justify-content-center text-white w-100 py-2">
+        <p class="text-center text-capitalize my-1"> all rights reserved &copy; to aya magdy 2021</p>
+
+    </footer>
+</body>
+<script src="https://kit.fontawesome.com/6e3c158bc5.js" crossorigin="anonymous"></script>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/js.js"></script>
+
+</html>

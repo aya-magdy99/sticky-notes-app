@@ -1,0 +1,285 @@
+/* basic styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.05rem;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    background: url(../images/flowes.png);
+    background-size: cover;
+}
+
+.handwritten {
+    font-family: 'Handlee', cursive;
+}
+
+
+/* create section styling */
+
+.create {
+    width: 30%;
+    position: fixed;
+    z-index: 65;
+    height: 100%;
+    opacity: 0;
+    border-right: rgba(255, 255, 255, 0.26) solid 1px;
+}
+
+.clos {
+    position: absolute;
+    bottom: 1%;
+    font-size: 8rem;
+    cursor: pointer;
+    right: 4%;
+}
+
+.clos i {
+    font-size: 1.5rem;
+}
+
+.in {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: .9s transform, .9s display, .9s opacity;
+}
+
+.out {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: .9s transform, .9s display, .9s opacity;
+}
+
+#mainBtn {
+    font-size: 2rem;
+}
+
+textarea {
+    resize: none;
+}
+
+
+/* ******************* */
+
+
+/* sticky note styling */
+
+.con {
+    transform: rotate(-1deg);
+    height: 100%;
+    transition: transform .3s, box-shadow .2s;
+}
+
+.con:hover {
+    transform: rotate(0deg) scale(1.05);
+    box-shadow: 2px 2px 12px black;
+}
+
+.paper {
+    background: url(../images/view-white-crumpled-paper.jpg);
+    background-size: cover;
+    height: 100%;
+}
+
+.sticky {
+    background-color: #9ccb3dc5;
+    border-radius: 2px;
+    height: 100%;
+}
+
+
+/* just added styling */
+
+.justAdded {
+    opacity: 0;
+    animation: appear .8s forwards;
+    transition: transform .3s, box-shadow .2s;
+}
+
+
+/* just deleted styling */
+
+.justDeleted {
+    opacity: 0;
+    animation: appear .4s forwards;
+    animation-direction: reverse;
+    transition: transform .3s, box-shadow .2s;
+}
+
+
+/* edit and delete */
+
+.btns {
+    height: 40px;
+    width: 40px;
+    box-shadow: 0 0 0 3px white;
+}
+
+.btns i {
+    color: white;
+}
+
+
+/* color buttons */
+
+.colors {
+    display: flex;
+}
+
+.colors div {
+    margin: 0 5px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.col:nth-child(1) {
+    background-color: #ff1818;
+}
+
+.col:nth-child(2) {
+    background-color: #f7931e;
+}
+
+.col:nth-child(3) {
+    background-color: #e7c025;
+}
+
+.col:nth-child(4) {
+    background-color: #9ccb3d;
+}
+
+.col:nth-child(5) {
+    background-color: #029595;
+}
+
+.col:nth-child(6) {
+    background-color: #f05899;
+}
+
+.active-col {
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.90);
+    transition: box-shadow .2s;
+}
+
+
+/* classes for note coloring */
+
+.pnk {
+    background-color: #f0589ac5;
+}
+
+.ylw {
+    background-color: #e7c025c5;
+}
+
+.orng {
+    background-color: #f7931ec5;
+}
+
+.blu {
+    background-color: #029595c5;
+}
+
+.rd {
+    background-color: #ff1818c5;
+}
+
+
+/* date styling */
+
+.date {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/* add styling */
+
+.open {
+    position: fixed;
+    bottom: 10%;
+    left: 3%;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.open i {
+    font-size: 4rem;
+}
+
+
+/* footer styling */
+
+footer {
+    border-top: rgba(255, 255, 255, 0.26) solid 1px;
+}
+
+
+/* animation for just added and deleted */
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: scale(.1) rotate(-10deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
+}
+
+
+/* animation for create section*/
+
+@keyframes in {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+
+/* responsive */
+
+@media (max-width: 1024px) {
+    * {
+        font-size: 0.95;
+    }
+    .create {
+        width: 50%;
+    }
+    .btns {
+        height: 35px;
+        width: 35px;
+        box-shadow: 0 0 0 3px white;
+    }
+}
+
+@media (max-width: 768px) {
+    #row {
+        padding: 0 1rem;
+    }
+    .open i {
+        font-size: 3rem;
+    }
+    * {
+        font-size: 0.85;
+    }
+    .create {
+        width: 100%;
+    }
+    .btns {
+        height: 30px;
+        width: 30px;
+        box-shadow: 0 0 0 3px white;
+    }
+}
