@@ -226,6 +226,7 @@ function getDate() {
 function clear() {
     noteCon.value = '';
     noteTitle.value = '';
+    p.innerHTML = `0/350`;
 }
 
 
