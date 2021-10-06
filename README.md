@@ -1,13 +1,13 @@
 # Sticky Notes Web App
 
 ## Web app with HTML, Css, Bootstrap and pure JavaScript 
-
+[Live Demo](https://sticky-notes-app-by-aya.netlify.app/)
 ### How to use
 
-1- click the + button at the left bottom of the screen.
-2- enter your note's title.
-3- enter your note's content.
-4- choose a color for your note.
+1. click the + button at the left bottom of the screen.
+2. enter your note's title.
+3. enter your note's content.
+4. choose a color for your note.
  
  And that's it your done!!
  your note will be saved on your browser.
