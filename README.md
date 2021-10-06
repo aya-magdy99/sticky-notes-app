@@ -1,7 +1,7 @@
 # Sticky Notes Web App
 
 ## Web app with HTML, Css, Bootstrap and pure JavaScript 
-[Live Demo](https://sticky-notes-app-by-aya.netlify.app/)
+[Live Demo](https://sticky-notes-app-by-aya.netlify.app/"Sticky notes web app")
 ### How to use
 
 1. click the + button at the left bottom of the screen.
