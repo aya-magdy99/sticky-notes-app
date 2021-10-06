@@ -7,6 +7,12 @@
     font-size: 1.05rem;
 }
 
+h1 {
+    font-family: 'Arvo', serif;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
 body {
     background-color: rgb(255, 255, 255);
     height: 100vh;
@@ -202,7 +208,7 @@ textarea {
 
 .open {
     position: fixed;
-    bottom: 10%;
+    bottom: 5%;
     left: 3%;
     z-index: 9999;
     cursor: pointer;
@@ -251,6 +257,9 @@ footer {
 /* responsive */
 
 @media (max-width: 1024px) {
+    h1 {
+        font-size: 3.2rem;
+    }
     * {
         font-size: 0.95;
     }
@@ -265,6 +274,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
     #row {
         padding: 0 1rem;
     }
